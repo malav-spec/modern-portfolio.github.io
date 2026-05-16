@@ -9,18 +9,18 @@ export default function Home() {
   const [isDark, setIsDark] = useState(false);
 
   // Ultra-smooth spring physics for premium micro-interactions
-  const springTransition = { type: "spring", stiffness: 100, damping: 15 };
+  const springTransition = { type: "spring" as const, stiffness: 100, damping: 15 };
 
-  // Explicitly defined animation variants to prevent TypeScript/runtime spreading errors
+  // Explicitly defined animation variants using 'as const' to lock literal string types
   const sectionVariants = {
     initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
   const cardVariants = {
     initial: { opacity: 0, y: 24 },
     animate: { opacity: 1, y: 0, transition: { ...springTransition, duration: 0.6 } },
-    hover: { y: -6, scale: 1.01, transition: { duration: 0.2, ease: "easeInOut" } }
+    hover: { y: -6, scale: 1.01, transition: { duration: 0.2, ease: "easeInOut" as const } }
   };
 
   const skillCategories = [
@@ -120,13 +120,17 @@ export default function Home() {
       university: "Trine University",
       degree: "Master of Science in Information Studies",
       timeline: "May 2026",
-      highlights: ["GPA: 3.90"]
+      highlights: ["GPA: 3.90"],
+      link: "",
+      linkLabel: ""
     },
     {
       university: "Rutgers University — New Brunswick",
       degree: "B.S. in Computer Science & Minor in Mathematics",
       timeline: "May 2022",
       highlights: ["GPA: 3.50", "Dean's List Spring 2020", "Dean's List Fall 2020"],
+      link: "",
+      linkLabel: ""
     }
   ];
 
