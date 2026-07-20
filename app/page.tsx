@@ -59,13 +59,13 @@ export default function Home() {
       ]
     },
     {
-      role: "Undergraduate Research Assistant",
-      company: "Rutgers University",
-      timeline: "May 2021 — October 2021",
+      role: "Junior Software Engineer",
+      company: "Vrtusa",
+      timeline: "September 2022 — December 2022",
       bullets: [
-        "Assisted in conducting experiments to test the effect of tail latency and system availability on a distributed cluster.",
-        "Engineered containerized testing environments using Docker to simulate various system workloads.",
-        "Deployed workloads on key-value store caching solutions (Memcached) to analyze performance impacts and avoid latency bottlenecks."
+        "Developed web applications utilizing the Spring Framework, adhering strictly to the standard Model-View-Controller (MVC) architecture.",
+"Engineered dynamic, responsive frontend user interfaces leveraging React for optimal user experience.",
+"Integrated backend services with Oracle DB to ensure efficient data management, secure transactions, and robust querying capabilities."
       ]
     }
   ];
