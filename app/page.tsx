@@ -199,7 +199,7 @@ export default function Home() {
                 <a href="mailto:doshimalav18@gmail.com" className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium transition-all transform hover:-translate-y-0.5 shadow-md shadow-blue-500/10">
                   Get In Touch
                 </a>
-                <a href="https://docs.google.com/document/d/1mAxlUZXXrDtuHklQcks3TMJAlqIw_NDQ/" target="_blank" rel="noreferrer" className={`flex items-center gap-2 border px-6 py-3 rounded-lg font-medium transition-all transform hover:-translate-y-0.5 shadow-sm ${isDark ? "bg-slate-900 border-slate-800 text-slate-200 hover:border-slate-700" : "bg-white border-slate-200 text-slate-800 hover:bg-slate-50"}`}>
+                <a href="https://drive.google.com/file/d/1WCVP3ydS2OXHUIw9OoJSpJqcr5VuH7tv/view?usp=sharing" target="_blank" rel="noreferrer" className={`flex items-center gap-2 border px-6 py-3 rounded-lg font-medium transition-all transform hover:-translate-y-0.5 shadow-sm ${isDark ? "bg-slate-900 border-slate-800 text-slate-200 hover:border-slate-700" : "bg-white border-slate-200 text-slate-800 hover:bg-slate-50"}`}>
                   <FileText size={18} className="text-slate-400" /> View Resume
                 </a>
               </div>
